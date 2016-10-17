@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00b787"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/frag_header" >
+
+
+
+        <ImageView
+            android:id="@+id/imageVi_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/frag_viewlist" >
+        </ImageView>
+
+        <View
+            android:id="@+id/view_List"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/viewback"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:id="@+id/view_Grid"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/viewback"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewGrid_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/frag_circleheader"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_circle_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:background="@android:color/transparent"
+            android:capitalize="words"
+            android:ems="10"
+            android:hint="Search Your Circle"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView_Circles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:columnWidth="140dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"
+        android:layout_above="@+id/relativeLayoutbottom">
+    </GridView>
+
+
+    <ImageButton
+        android:id="@+id/composecircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/composen" />
+
+
+
+</RelativeLayout>

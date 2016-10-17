@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+ <RelativeLayout
+        android:id="@+id/rl_header_faqs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/myGreen" >
+
+     <ImageButton
+         android:src="@drawable/leftarrow"
+         android:layout_width="50dp"
+         android:layout_height="match_parent"
+         android:id="@+id/ivFaqLeft"
+         android:background="@drawable/ivbuttonselector_green"
+         android:contentDescription="backButton" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/ivFaqLeft"
+          android:text="FAQs"
+          android:padding="5dp"
+          android:textColor="@color/white"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+  
+  <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center">
+
+      <ExpandableListView
+          android:id="@+id/expandableListView_faq"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scrollbars="none"
+          android:groupIndicator="@drawable/group_indicator_faqs"
+          android:listSelector="@drawable/listitem_selector"
+          android:padding="5dp"
+         >
+      </ExpandableListView>
+
+</RelativeLayout>
+</LinearLayout>

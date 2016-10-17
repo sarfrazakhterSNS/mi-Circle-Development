@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3d4f63" >
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/viewline"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Password reset - step 1"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:src="@drawable/cancelnew"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/buttonselector"
+            android:id="@+id/imageButtonCancel" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/imageButtonCancel"
+            android:background="@color/light_gray"
+            android:id="@+id/viewline"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_context"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+           <EditText
+               android:id="@+id/ed_CC"
+               android:layout_width="0dp"
+               android:layout_height="50dp"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentRight="true"
+               android:layout_below="@+id/ed_emailid"
+               android:background="@drawable/custom_profile"
+               android:layout_marginBottom="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="5dp"
+               android:layout_marginTop="10dp"
+               android:layout_weight=".3"
+               android:paddingLeft="5dp"
+               android:textSize="15sp"
+               android:ems="10"
+               android:hint="CC"
+               android:inputType="phone"
+               android:maxLines="1"
+               android:visibility="gone">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/etDialog_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ed_emailid"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:background="@drawable/custom_profile"
+                android:ems="10"
+                android:hint="Ex - +91 xxxxxxxxxx"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:maxLines="1"
+                android:textSize="15sp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etDialog_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layout_header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_profile"
+            android:ems="10"
+            android:hint="Enter Email Id"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundbutton_withselector_mygreen"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Please enter registered phone number and email address to receive OTP through email for account validation."
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

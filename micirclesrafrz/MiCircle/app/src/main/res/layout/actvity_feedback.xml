@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/myGreen"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            android:src="@drawable/leftarrow"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton_back"
+            android:background="@drawable/ivbuttonselector_green"
+            android:contentDescription="backButton" />
+
+        <TextView
+            android:text="@string/header_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_headerfeedback"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:text="Click to select a category" />
+
+    <Spinner
+        android:id="@+id/spinner_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        style="@style/PopupMenuListView"
+
+        />
+
+    <EditText
+        android:id="@+id/et_feedMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="Type your suggestions here..."
+        android:padding="10dp"
+        android:maxLines="5"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_submitFeeds"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonselector"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

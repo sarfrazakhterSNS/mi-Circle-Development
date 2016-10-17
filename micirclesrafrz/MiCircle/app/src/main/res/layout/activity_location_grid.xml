@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00b787"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/frag_header" >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/frag_back_arrow"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/viewback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/viewback"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Search Your Locations"
+            android:inputType="textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:imeOptions="actionSearch"
+            android:textSize="15sp"  >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageVi_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/frag_viewlist" >
+        </ImageView>
+
+        <View
+            android:id="@+id/view_List"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/viewback"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:id="@+id/view_Grid"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/viewback"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewGrid_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/frag_circleheader"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/grid_view_Location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayoutbottom"
+        android:layout_below="@+id/rl_header"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:columnWidth="140dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" >
+    </GridView>
+
+    <ImageButton
+        android:id="@+id/composebutton_grid_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/composen" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutbottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#3d4f63" >
+
+        <TextView
+            android:id="@+id/bottomButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add Your Locations"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="16dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bottomButtonText"
+            android:src="@drawable/locationlocator" />
+
+        <View
+            android:id="@+id/viewbottom"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

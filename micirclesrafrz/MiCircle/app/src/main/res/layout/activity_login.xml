@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroundimage"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/milogonew"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:id="@+id/tv_not_yet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/seprator"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/sepratorright"
+                android:text="Not Yet in mi-Circle"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/buttonlogin"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/tv_not_yet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_button"
+                android:drawableLeft="@drawable/loginiconn"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="ACCOUNT LOGIN" />
+
+            <RelativeLayout
+                android:id="@+id/Layout_midSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonlogin"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerVertical="true" >
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/editTextUserName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#FFFFFF"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editTextUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/editTextPassword"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/editTextPassword"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_corner"
+                    android:drawableLeft="@drawable/usrn"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Ex - +91 xxxxxxxxxx"
+                    android:paddingRight="6dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:maxLines="1"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#FFFFFF"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="15sp"
+                    android:inputType="phone">
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_forget_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Forgot Password ?"
+                    android:textColor="@drawable/text_state_color"
+                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hed_log_sig"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:weightSum="1" >
+
+            <ImageButton
+                android:id="@+id/register_btnLinkedIn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_weight="0.33"
+                android:padding="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/in" />
+
+            <ImageButton
+                android:id="@+id/register_btnFB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:padding="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/fb" />
+
+            <ImageButton
+                android:id="@+id/register_btnGoogle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="80dp"
+                android:layout_weight=".33"
+                android:padding="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/gplus" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_hed_log_sig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/buttonJoin"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Login or Signup With"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonJoin"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:text="Join Now"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>

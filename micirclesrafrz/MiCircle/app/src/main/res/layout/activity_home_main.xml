@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView_mihomelogo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:src="@mipmap/milogonew"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--*****************************-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#4D000000">
+
+        <!--*********************************************-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal">
+
+
+
+                <FrameLayout
+                    android:id="@+id/Layout_Happening"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/homec" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Happening"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/Layout_Circle"
+                    android:layout_width="@dimen/bulb_2"
+                    android:layout_height="@dimen/bulb_2"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_circlec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/circlec" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Circle"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".34"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/Layout_Panic"
+                    android:layout_width="@dimen/bulb_2"
+                    android:layout_height="@dimen/bulb_2"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_panicc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/panicc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Panic"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:orientation="horizontal">
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/Layout_Friend"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_friendc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/friendc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Friends"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/Layout_Location"
+                    android:layout_width="@dimen/bulb_2"
+                    android:layout_height="@dimen/bulb_2"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_locationc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/locationc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Location"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".34"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/Layout_Notification"
+                    android:layout_width="@dimen/bulb_2"
+                    android:layout_height="@dimen/bulb_2"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_notificationc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/notificationc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Notifications"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".34"
+            android:orientation="horizontal">
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="top|center_horizontal"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/Layout_Apps"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_appsc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/appsc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Apps"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="top|center_horizontal"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/Layout_Settings"
+                    android:layout_width="@dimen/bulb_2"
+                    android:layout_height="@dimen/bulb_2"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_settingsc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/settingsc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Settings"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".34"
+                android:gravity="top|center_horizontal"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/Layout_m"
+                    android:layout_width="@dimen/bulb_2"
+                    android:layout_height="@dimen/bulb_2"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/circular_red"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView_m"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/m" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Panic Alert"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--*******-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--****************************-->
+
+</RelativeLayout>
